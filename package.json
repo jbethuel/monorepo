@@ -1,0 +1,30 @@
+{
+  "name": "monorepo",
+  "author": {
+    "email": "jbethueldc@gmail.com",
+    "name": "Joseph Bethuel Dela Cruz",
+    "url": "https://jbethuel.com"
+  },
+  "private": true,
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "web": "yarn workspace @monorepo/web",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint --parallel",
+    "build": "turbo run build",
+    "check": "turbo run lint && prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1",
+    "turbo": "latest"
+  }
+}

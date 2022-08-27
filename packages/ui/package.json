@@ -1,0 +1,29 @@
+{
+  "name": "@monorepo/ui",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "module": "./build/index.mjs",
+  "types": "./build/index.d.ts",
+  "prettier": "@monorepo/prettier-config/prettier.json",
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@monorepo/eslint-config"
+    ]
+  },
+  "scripts": {
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "lint": "eslint ./src --max-warnings=0 && prettier --check ./src"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "tsup": "^6.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "tsconfig": "*",
+    "typescript": "^4.8.2"
+  }
+}

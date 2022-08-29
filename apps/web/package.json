@@ -5,14 +5,13 @@
   "prettier": "@monorepo/prettier-config/prettier.json",
   "eslintConfig": {
     "root": true,
-    "extends": [
-      "@monorepo/eslint-config"
-    ]
+    "extends": "@monorepo/eslint-config"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "ENVIRONMENT=development vite",
+    "lint": "eslint ./src --max-warnings=0 && prettier --check ./src",
     "build": "tsc && vite build",
-    "lint": "eslint ./src --max-warnings=0 && prettier --check ./src"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@monorepo/ui": "*",
@@ -20,12 +19,14 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@monorepo/eslint-config": "*",
+    "@monorepo/prettier-config": "*",
+    "@monorepo/ts-config": "*",
     "@types/node": "^18.7.13",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",
     "eslint": "^8.23.0",
-    "tsconfig": "*",
     "typescript": "^4.8.2",
     "vite": "^3.0.4",
     "vite-plugin-environment": "^1.1.2",

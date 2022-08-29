@@ -8,9 +8,7 @@
   "prettier": "@monorepo/prettier-config/prettier.json",
   "eslintConfig": {
     "root": true,
-    "extends": [
-      "@monorepo/eslint-config"
-    ]
+    "extends": "@monorepo/eslint-config"
   },
   "scripts": {
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
@@ -22,8 +20,10 @@
     "tsup": "^6.2.3"
   },
   "devDependencies": {
+    "@monorepo/eslint-config": "*",
+    "@monorepo/prettier-config": "*",
+    "@monorepo/ts-config": "*",
     "eslint": "^8.23.0",
-    "tsconfig": "*",
     "typescript": "^4.8.2"
   }
 }

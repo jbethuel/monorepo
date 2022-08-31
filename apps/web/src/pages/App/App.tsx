@@ -1,3 +1,4 @@
+import { userUtils } from '@monorepo/core';
 import { Sample } from '@monorepo/ui';
 import { useCallback, useMemo, useState } from 'react';
 
@@ -27,6 +28,13 @@ export function App(props: AppProps) {
 
     return `${message}!`;
   }, [name]);
+
+  console.log(
+    userUtils.formatName({
+      firstName: 'First',
+      lastName: 'Last',
+    }),
+  );
 
   return (
     <div data-testid={appTestId}>

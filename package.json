@@ -16,6 +16,7 @@
     "packages/*"
   ],
   "scripts": {
+    "core": "yarn workspace @monorepo/core",
     "web": "yarn workspace @monorepo/web",
     "ui": "yarn workspace @monorepo/ui",
     "dev": "turbo run dev --parallel",

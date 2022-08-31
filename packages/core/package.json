@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/ui",
+  "name": "@monorepo/core",
   "version": "0.0.1",
   "license": "MIT",
   "main": "./build/index.js",
@@ -16,14 +16,9 @@
     "lint": "eslint ./src --max-warnings=0 && prettier --check ./src"
   },
   "dependencies": {
-    "react": "^18.2.0",
     "tsup": "^6.2.3"
   },
   "devDependencies": {
-    "@monorepo/eslint-config": "*",
-    "@monorepo/prettier-config": "*",
-    "@monorepo/ts-config": "*",
-    "eslint": "^8.23.0",
     "typescript": "^4.8.2"
   }
 }

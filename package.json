@@ -21,8 +21,7 @@
     "ui": "yarn workspace @monorepo/ui",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint --parallel",
-    "build": "turbo run build",
-    "check": "turbo run lint"
+    "build": "turbo run build"
   },
   "devDependencies": {
     "eslint": "^8.23.0",

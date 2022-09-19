@@ -1,0 +1,26 @@
+{
+  "name": "@monorepo/server",
+  "private": true,
+  "version": "0.0.1",
+  "prettier": "@monorepo/prettier-config/prettier.json",
+  "eslintConfig": {
+    "root": true,
+    "extends": "@monorepo/eslint-config"
+  },
+  "scripts": {
+    "dev": "tsup --watch --onSuccess 'node ./build/index.js'",
+    "build": "tsup",
+    "start": "node ./build/index.js"
+  },
+  "dependencies": {
+    "@monorepo/core": "*",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@monorepo/prettier-config": "*",
+    "@monorepo/ts-config": "*",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.7.13",
+    "typescript": "^4.8.3"
+  }
+}

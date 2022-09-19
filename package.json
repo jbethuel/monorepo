@@ -18,6 +18,7 @@
   "scripts": {
     "core": "yarn workspace @monorepo/core",
     "web": "yarn workspace @monorepo/web",
+    "server": "yarn workspace @monorepo/server",
     "ui": "yarn workspace @monorepo/ui",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint --parallel",

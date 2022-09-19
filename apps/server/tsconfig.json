@@ -1,0 +1,15 @@
+{
+  "extends": "@monorepo/ts-config/base.json",
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "noEmit": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "sourceMap": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}

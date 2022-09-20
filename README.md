@@ -10,9 +10,16 @@
 | `prettier` | `packages/prettier-config` | Prettier configuration                     |
 | `ui`       | `packages/ui`              | Business generic UI (buttons, labels, etc) |
 
-| Application | Folder     | Description                                                 |
-| :---------- | :--------- | :---------------------------------------------------------- |
-| `web`       | `apps/web` | React Application (can consume all projects under packages) |
+| Application | Folder       | Description                                                 |
+| :---------- | :---------   | :---------------------------------------------------------- |
+| `web`       | `apps/web`   | React Application (can consume all projects under packages) |
+| `server`    | `apps/server`| Simple Express app                                          |
+
+## Technology
+- Typescript - Language
+- Turborepo - Monorepo tool
+- Eslint, Prettier - Style, Lint
+- React, Vite, Express - Apps
 
 ## Sample Usage
 

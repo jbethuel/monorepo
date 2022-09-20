@@ -27,8 +27,9 @@
 # installation
 yarn install
 
-# selecting a package
-yarn <package-name> // <package-name> can be core, web, ui
+# selecting a package to run a script into
+# <package-name> can be anything under apps/ or packages/ as long as it is declared under root package.json
+yarn <package-name> 
 
 # sample script to install luxon to core
 yarn core add luxon
@@ -36,6 +37,6 @@ yarn core add luxon
 # sample script to run web
 yarn web dev
 
-# running dev across all packages that has dev script in its package.json
+# running dev across all packages that has dev script in its respective package.json
 yarn dev
 ```

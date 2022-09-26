@@ -1,10 +1,8 @@
 {
   "name": "@monorepo/eslint-config",
   "version": "0.0.1",
+  "private": true,
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "main": "index.js",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.7",

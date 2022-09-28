@@ -5,13 +5,7 @@
     "lib": ["DOM", "ESNext"],
     "module": "ESNext",
     "noEmit": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "target": "ESNext",
-    "useDefineForClassFields": true
+    "target": "ESNext"
   },
   "exclude": ["node_modules"],
   "include": ["src"]

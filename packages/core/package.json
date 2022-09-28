@@ -20,6 +20,9 @@
     "tsup": "^6.2.3"
   },
   "devDependencies": {
+    "@monorepo/eslint-config": "*",
+    "@monorepo/prettier-config": "*",
+    "@monorepo/ts-config": "*",
     "typescript": "^4.8.2"
   }
 }

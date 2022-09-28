@@ -17,6 +17,7 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "@monorepo/eslint-config": "*",
     "@monorepo/prettier-config": "*",
     "@monorepo/ts-config": "*",
     "@types/express": "^4.17.14",

@@ -3,9 +3,9 @@
   "extends": "@monorepo/ts-config/base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "lib": ["dom", "ES2015"],
+    "lib": ["DOM", "ESNext"],
     "module": "ESNext",
-    "target": "es6"
+    "target": "ES2017"
   },
   "include": ["src"],
   "exclude": ["build", "node_modules"]

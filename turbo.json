@@ -1,11 +1,16 @@
 {
   "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
+    "clean": {
+      "cache": false,
+      "outputs": []
+    },
     "dev": {
       "cache": false,
       "outputs": []
     },
     "lint": {
+      "cache": false,
       "outputs": []
     },
     "build": {
@@ -13,6 +18,10 @@
       "outputs": ["build/**"]
     },
     "@monorepo/ui#build": {
+      "dependsOn": ["^lint"],
+      "outputs": ["build/**"]
+    },
+    "@monorepo/server#build": {
       "dependsOn": ["^lint"],
       "outputs": ["build/**"]
     },

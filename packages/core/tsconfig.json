@@ -1,6 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@monorepo/ts-config/base.json",
-  "include": ["src"],
-  "exclude": ["build", "node_modules"]
+  "include": ["src"]
 }

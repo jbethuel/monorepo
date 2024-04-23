@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@monorepo/core": "*",
-    "express": "^4.18.1"
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "@monorepo/eslint-config": "*",
